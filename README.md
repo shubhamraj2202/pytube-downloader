@@ -1,24 +1,25 @@
-![build](https://github.com/shubhamraj2202/py-helper/actions/workflows/github-actions.yml/badge.svg?event=push)
-[![codecov](https://codecov.io/gh/shubhamraj2202/py-helper/branch/main/graph/badge.svg?token=X9KIXXBOAV)](https://codecov.io/gh/shubhamraj2202/pyhelper)
+![build](https://github.com/shubhamraj2202/pytube-downloader/actions/workflows/github-actions.yml/badge.svg?event=push)
+[![codecov](https://codecov.io/gh/shubhamraj2202/pytube-downloader/branch/main/graph/badge.svg?token=X9KIXXBOAV)](https://codecov.io/gh/shubhamraj2202/pytube-downloader)
 # pyhelper
-Python Library Containing Generic Utilities and Helper Functions
-
+Wrapper over Python's pytube package for downloading youtube videos.
 
 # Installation
-> pip install pyhelper-misc
+> pip install pytube-downloader
 
 
 # Uses
 ```
 # Example:
->>> from pyhelper.misc import find_all_in_dict
->>> data = {"a": {"b": "c", "d": "e"}, "f": {"g": "h"}}
->>> find_all_in_dict(data,  "d")
-['e']
+>>> from ytube.downloader import PyYTD
+
+>>> link = "https://www.youtube.com/watch?v=lG6ZCswlkm8"
+>>> pytd = PyYTD(link)
+>>> pytd.download()
+'~/pytube-downloader/./Agar Tum Sath Ho Cover ( Finger Style ).mp4'
 ```
 
 # Project Setup for Development
 > Run Cmd: `source setup.sh`
 
 # Uploaded On:
-https://pypi.org/project/pyhelper-misc/
+https://pypi.org/project/pytube-downloader/

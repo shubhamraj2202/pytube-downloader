@@ -1,3 +1,6 @@
 codecov
 pytest
 pytest-cov
+pytube
+pyhelper-misc
+pydantic

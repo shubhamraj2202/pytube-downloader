@@ -5,14 +5,18 @@ from __future__ import annotations
 from setuptools import find_packages, setup
 
 setup(
-    name="pyhelper-misc",
+    name="pytube-downloader",
     version="1.0.0",
-    description="Python Library Containing Generic Utilities and Helper Functions",
+    description="Wrapper over pytube python's package",
     long_description=open("README.md", encoding="utf-8").read(),
+    long_description_content_type="text/markdown",
     author="Shubham Raj",
     author_email="shubhamraj2202@gmail.com",
-    url="https://www.linkedin.com/in/shubhamraj2202/",
-    packages=find_packages(include=["py_helper", "py_helper.*"]),
+    url="https://github.com/shubhamraj2202/pytube-downloader",
+    packages=find_packages(include=["src", "src.*"]),
     install_requires=[],
     tests_require=["pytest"],
+    project_urls={
+        "Bug Reports": "https://github.com/shubhamraj2202/pytube-downloader/issues",
+    },
 )
